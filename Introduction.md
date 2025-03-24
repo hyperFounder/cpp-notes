@@ -117,9 +117,9 @@ In C++, objects can be created either **statically** (on the stack) or **dynamic
 
 ---
 
-#### Static Objects
+#### Normal (static) Objects
 
-Static objects are created on the stack. When you declare a static object, it is automatically destroyed when it goes out of scope.
+Normal (static) objects are created on the stack. When you declare a static object, it is automatically destroyed when it goes out of scope.
 
 ```cpp
 #include <iostream>
