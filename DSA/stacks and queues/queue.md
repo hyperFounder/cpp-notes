@@ -9,6 +9,14 @@ A **Queue** is a linear data structure that follows the **First In, First Out (F
 4. **IsEmpty**: Check if the queue is empty.
 5. **IsFull**: Check if the queue is full (for array-based implementations).
 
+## There are four different types of queues:
+
+- Simple Queue
+- Circular Queue
+- Priority Queue
+- Double Ended Queue
+
+
 ### Applications of Queue
 
 - CPU scheduling, Disk Scheduling
