@@ -37,7 +37,7 @@ A **tree** is a nonlinear hierarchical data structure consisting of nodes connec
 ### Types of Trees:
 1. **Binary Tree**:
    - Each node has at most two children (left and right).
-   - **Applications**: Expression evaluation, hierarchical data structures, etc.
+   - **Types**: Complete Binary Tree and Balanced Binary Tree.
 
 2. **Binary Search Tree (BST)**:
    - A binary tree with the property that the left child’s value is less than the parent’s value, and the right child’s value is greater.
