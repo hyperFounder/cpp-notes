@@ -68,6 +68,7 @@ int main() {
 ### 3. Dynamic Memory Allocation
 
 - ```malloc``` and ```free``` in C corresponds to ```new``` and ```delete``` in C++
+- free is meant for malloc-allocated memory, not new.
 
 ```cpp
 #include <iostream>
