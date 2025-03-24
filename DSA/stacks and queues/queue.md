@@ -130,7 +130,7 @@ int main() {
 
 ## Linked List implementation of a Queue
 
-```java
+```c
 // Linked List implementation of a queue
 
 #include <stdio.h>
