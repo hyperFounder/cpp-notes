@@ -14,7 +14,7 @@ A **Queue** is a linear data structure that follows the **First In, First Out (F
 - Simple Queue ✅
 - Circular Queue ✅ 
 - Priority Queue (Linked List ✅, Heap ❌)
-- Double Ended Queue
+- Double Ended Queue ❌
 
 
 ### Applications of Queue
