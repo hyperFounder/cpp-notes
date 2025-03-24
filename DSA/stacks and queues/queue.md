@@ -11,9 +11,9 @@ A **Queue** is a linear data structure that follows the **First In, First Out (F
 
 ## There are four different types of queues:
 
-- Simple Queue
-- Circular Queue
-- Priority Queue
+- Simple Queue ✅
+- Circular Queue ✅ 
+- Priority Queue (Linked List ✅, Heap ❌)
 - Double Ended Queue
 
 
