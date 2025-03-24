@@ -133,12 +133,22 @@ int main() {
 - To enqueue, we insert at the end.
 - To dequeue, we delete from the beginning.
 ---
-### Example
+![Screenshot 2025-03-24 at 18 49 28](https://github.com/user-attachments/assets/81829387-bf39-477f-bded-addb83ad7900)
+
 - front is a pointer to Node.
 - temp is also a pointer to Node (just copying the value of front).
+
 ```c
 Node *front = NULL;
 Node *temp = front;
+
+// Suppose we enqueue three nodes:
+enqueue(10); // node1
+enqueue(20); // node2
+enqueue(30); // node3
+
+temp = front; // temp points to front
+
 ```
 ---
 ```c
