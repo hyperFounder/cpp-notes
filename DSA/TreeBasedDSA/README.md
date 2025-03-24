@@ -35,23 +35,3 @@ A **tree** is a nonlinear hierarchical data structure consisting of nodes connec
     ```
 
   - Height of node 2 = 2
----
-### Types of Trees:
-1. **Binary Tree**:
-   - Each node has at most two children (left and right).
-   - **Types**: Complete Binary Tree and Balanced Binary Tree.
-
-2. **Binary Search Tree (BST)**:
-   - A binary tree with the property that the left child’s value is less than the parent’s value, and the right child’s value is greater.
-   - **Applications**: Searching, sorting, efficient insertion and deletion operations.
-
-3. **AVL Tree**:
-   - A self-balancing binary search tree where the height difference between left and right subtrees is at most one for all nodes.
-   - **Applications**: Ensures efficient search and insertion operations by maintaining balance.
-
-4. **Heap**:
-   - A complete binary tree where the parent’s value is greater (in max-heap) or smaller (in min-heap) than its children’s values.
-   - **Applications**: Priority queues, sorting (Heap sort), etc.
-
-
-
