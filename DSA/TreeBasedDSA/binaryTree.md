@@ -30,5 +30,11 @@ A complete binary tree is just like a full binary tree, but with two major diffe
 ### 2. Balanced Binary Tree
 ![Screenshot 2025-03-24 at 22 34 53](https://github.com/user-attachments/assets/2f9b72ee-68e4-4dd9-81ee-d42f200208c9)
 
-It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.
+A balanced binary tree, also referred to as a height-balanced binary tree, is defined as a binary tree in which the height of the left and right subtree of any node differ by not more than 1.
+
+### Properties:
+
+- difference between the left and the right subtree for any node is not more than one
+- the left subtree is balanced
+- the right subtree is balanced
 
