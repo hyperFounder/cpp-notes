@@ -139,7 +139,7 @@ int main() {
 - temp is also a pointer to Node (just copying the value of front).
 
 ```c
-Node *front = NULL;
+Node *front = NULL; // When we enqueue 10, 20, 30 front still points to 10.
 Node *temp = front;
 
 // Suppose we enqueue three nodes:
