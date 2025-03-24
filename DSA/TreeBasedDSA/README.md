@@ -1,4 +1,4 @@
-## Trees in Data Structures
+### Tree based DSA
 
 A **tree** is a nonlinear hierarchical data structure consisting of nodes connected by edges. It is widely used to represent hierarchical relationships, such as organizational charts, file systems, and decision-making processes.
 
