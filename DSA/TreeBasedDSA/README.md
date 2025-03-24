@@ -47,11 +47,7 @@ A **tree** is a nonlinear hierarchical data structure consisting of nodes connec
    - A self-balancing binary search tree where the height difference between left and right subtrees is at most one for all nodes.
    - **Applications**: Ensures efficient search and insertion operations by maintaining balance.
 
-4. **Red-Black Tree**:
-   - A self-balancing binary search tree with additional constraints that ensure the tree remains balanced after insertions and deletions.
-   - **Applications**: Used in many libraries and systems for efficient search, insert, and delete operations (e.g., in C++ STL, Java).
-
-5. **Heap**:
+4. **Heap**:
    - A complete binary tree where the parent’s value is greater (in max-heap) or smaller (in min-heap) than its children’s values.
    - **Applications**: Priority queues, sorting (Heap sort), etc.
 
