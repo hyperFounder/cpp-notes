@@ -132,7 +132,15 @@ int main() {
 - This is basically a singly linked list with two pointers, *head (i.e: *front) at the start of the queue and *tail at the end of the queue.
 - To enqueue, we insert at the end.
 - To dequeue, we delete from the beginning.
-
+---
+### Example
+- front is a pointer to Node.
+- temp is also a pointer to Node (just copying the value of front).
+```c
+Node *front = NULL;
+Node *temp = front;
+```
+---
 ```c
 #include <stdio.h>
 #include <stdlib.h>
