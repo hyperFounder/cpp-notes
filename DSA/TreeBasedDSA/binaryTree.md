@@ -10,6 +10,18 @@ struct node
  struct node *right;
 };
 ```
+### Using Arrays to Build Trees
+
+Arrays can efficiently represent **complete binary trees** and are widely used for structures like **heaps** due to their predictable index relationships.
+
+In a **complete binary tree**, for a node at **index `i`**:
+
+- **Left Child** = `2 * i + 1`
+- **Right Child** = `2 * i + 2`
+- **Parent** = `(i - 1) / 2`
+
+
+### Binary Tree:
 
 ---
 
