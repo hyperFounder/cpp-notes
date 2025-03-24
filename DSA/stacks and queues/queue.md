@@ -140,7 +140,7 @@ int main() {
 
 ```c
 Node *front = NULL; // When we enqueue 10, 20, 30 front still points to 10.
-Node *temp = front;
+Node *temp = front; // temp actually holds the same memory address as front
 
 // Suppose we enqueue three nodes:
 enqueue(10); // node1
