@@ -34,7 +34,7 @@ void enqueue(int value) {
         printf("Queue is full\n");
         return;
     }
-    if (front == -1) {
+    if (front == -1) { // if queue is empty
         front = 0;
     }
     rear = (rear + 1) % MAX;
@@ -47,7 +47,7 @@ int dequeue() {
         return -1;
     }
     int value = queue[front];
-    if (front == rear) {
+    if (front == rear) { // Only a single value in the queue
         front = rear = -1;  // Queue becomes empty
     } else {
         front = (front + 1) % MAX;
