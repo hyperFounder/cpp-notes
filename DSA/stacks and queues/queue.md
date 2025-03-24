@@ -131,60 +131,54 @@ int main() {
 ## Linked List implementation of a Queue
 
 ```c
-// Linked List implementation of a queue
-
 #include <stdio.h>
 #include <stdlib.h>
 
-
-typedef struct Node{
-
+typedef struct Node {
     int val;
     struct Node *next;
-
 } Node;
 
-Node *head = NULL;
+Node *front = NULL;
+Node *tail = NULL;
 
+void enqueue(int val) { // Insert at the END (tail)
+    Node *node = (Node *)malloc(sizeof(Node));
+    node->val = val;
+    node->next = NULL;
 
-void enqueue(int val){ // Insert at the beginning
-    Node *node = (struct Node *) malloc(sizeof (Node));
-
-    if (head == NULL){
-        head = node;
-    }else{
-        Node *h = head;
-        while (h->next!=NULL){
-            h = h->next;
-        }
-        h->next = node;
-        node->val = val;
+    if (front == NULL) { // Queue is empty
+        front = tail = node;
+    } else {
+        tail->next = node;
+        tail = node;
     }
 }
 
-void dequeue(){ // Remove from the END
-
-    if (head == NULL){
-        printf("Empty List... Exiting");
+void dequeue() { // Remove from the FRONT
+    if (front == NULL) {
+        printf("Queue is empty... Exiting\n");
         exit(-1);
-    } else{
-        Node *h = head;
-        while (h->next->next !=NULL){
-            h = h->next;
+    } else {
+        Node *temp = front;
+        front = front->next;
+        free(temp);
+        if (front == NULL) { // If queue becomes empty after dequeue
+            tail = NULL;
         }
-        h->next = NULL;
     }
 }
 
-void print(){
-    Node *h = head;
-    while (h!=NULL){
+void print() {
+    Node *h = front;
+    while (h != NULL) {
         printf("val: %d -> \t", h->val);
         h = h->next;
     }
+    printf("NULL\n");
 }
 
-int main(){
+int main() {
     enqueue(1);
     enqueue(2);
     enqueue(3);
@@ -193,8 +187,16 @@ int main(){
 
     dequeue();
 
-    printf("\n");
+    print();
+
+    dequeue();
 
     print();
+
+    dequeue();
+
+    print(); // Should print empty queue
+
+    return 0;
 }
 ```
