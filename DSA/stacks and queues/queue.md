@@ -89,7 +89,7 @@ int dequeue(struct Queue* q) {
         return -1;
     }
     int dequeuedValue = q->arr[q->front];
-    if (q->front == q->rear) {
+    if (q->front == q->rear) { // A single value in queue
         q->front = q->rear = -1; // Reset queue when it becomes empty
     } else {
         q->front++;
