@@ -136,11 +136,11 @@ struct Person {
 };
 
 int main() {
-    // Static object (on the stack)
+    // The object p1 is placed in the stack frame of the main() function
     Person p1 = {"Alice", 30};
     p1.display(); // Displays: Name: Alice, Age: 30
 
-    // Static objects are automatically destroyed when they go out of scope
+    // This object is automatically destroyed when they go out of scope
     return 0;
 }
 ```
