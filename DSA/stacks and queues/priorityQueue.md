@@ -70,7 +70,7 @@ int enqueue(Node **queue, Node* p){
 }
 
 // Dequeue function to remove the highest priority element (front of the queue)
-int dequeue(Node **queue) {
+int dequeue(Node **queue) { // For a double pointer, we need to pass in the memory address of a pointer
     if (*queue == NULL) {
         printf("Queue is empty\n");
         return -1;  // Return error if queue is empty
