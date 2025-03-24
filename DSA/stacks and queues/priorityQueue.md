@@ -46,6 +46,7 @@ typedef struct Node {
 
 // Singly Linked List
 
+// Enqueue function to insert nodes in priority order (highest priority at front)
 int enqueue(Node **queue, Node* p){
     Node *h = *queue;
     Node *prev = NULL;
@@ -68,7 +69,28 @@ int enqueue(Node **queue, Node* p){
     return 1; // Successful Enqueue
 }
 
+// Dequeue function to remove the highest priority element (front of the queue)
+int dequeue(Node **queue) {
+    if (*queue == NULL) {
+        printf("Queue is empty\n");
+        return -1;  // Return error if queue is empty
+    }
+
+    Node* temp = *queue;
+    int data = temp->data;
+    *queue = (*queue)->next;  // Move the front pointer to the next node
+
+    free(temp);  // Free the memory of the removed node
+    return data;  // Return the dequeued data
+}
+
+// Print the priority queue
 void printQueue(Node* queue) {
+    if (queue == NULL) {
+        printf("Queue is empty\n");
+        return;
+    }
+
     while (queue != NULL) {
         printf("(%d, %d) ", queue->data, queue->priority);
         queue = queue->next;
@@ -99,14 +121,20 @@ int main() {
     enqueue(&priorityQueue, node2);
     enqueue(&priorityQueue, node3);
 
-    // Print the priority queue
+    // Print the priority queue after enqueues
+    printf("Priority Queue after enqueues: ");
     printQueue(priorityQueue);
 
-    // Clean up
+    // Dequeue the highest priority element
+    printf("Dequeued element: %d\n", dequeue(&priorityQueue));
+
+    // Print the priority queue after dequeuing
+    printf("Priority Queue after dequeue: ");
+    printQueue(priorityQueue);
+
+    // Clean up remaining nodes
     while (priorityQueue != NULL) {
-        Node* temp = priorityQueue;
-        priorityQueue = priorityQueue->next;
-        free(temp);
+        dequeue(&priorityQueue);
     }
 
     return 0;
