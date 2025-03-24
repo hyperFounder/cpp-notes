@@ -129,6 +129,7 @@ int main() {
 ```
 
 ## Linked List implementation of a Queue
+- This is basically a singly linked list with two pointers, *head (i.e: *front) at the start of the queue and *tail at the end of the queue.
 
 ```c
 #include <stdio.h>
