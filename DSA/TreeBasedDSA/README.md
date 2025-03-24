@@ -6,6 +6,8 @@ A **tree** is a nonlinear hierarchical data structure consisting of nodes connec
 
 ### Applications of Trees:
 1. **File Systems**: File systems like NTFS and HFS+ use trees to organize files and directories in a hierarchical manner.
+2. **B-Trees**: A special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.
+   - **Applications**: B-trees and their variations are used in databases for indexing data and efficiently searching records.
 ---
 ## Mathematical Definitions:
 ### Depth and Height:
@@ -51,8 +53,5 @@ A **tree** is a nonlinear hierarchical data structure consisting of nodes connec
    - A complete binary tree where the parent’s value is greater (in max-heap) or smaller (in min-heap) than its children’s values.
    - **Applications**: Priority queues, sorting (Heap sort), etc.
 
-5. **B-Trees**:
-   - A B-tree is a special type of self-balancing search tree in which each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.
-   - **Applications**: Databases: B-trees and their variations are used in databases for indexing data and efficiently searching records.
 
 
