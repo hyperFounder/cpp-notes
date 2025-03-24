@@ -5,7 +5,7 @@
 
 ### Ways it can be implemented:
 - **Min-Heap or Max-Heap**: Typically implemented using heaps, where a **min-heap** gives priority to the smallest element, and a **max-heap** gives priority to the largest element.
-- **Linked List**:
+- **Singly Linked List**:
   - **Insert**: O(n) time complexity, as the list needs to be sorted after each insertion.
   - **Delete (or Dequeue)**: O(1) time complexity, as the highest priority element is always at the front.
   - **Space Complexity**: O(n)
