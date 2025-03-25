@@ -34,6 +34,25 @@ int main() {
     return 0;
 }
 ```
+### Pointer arithmetic example
+
+```c
+int main(){
+
+    int *ptr = (int *)malloc(3 * sizeof(int));
+    int *temp = ptr;
+
+    for (int i = 0; i<3; i++){
+        *temp = i*2;
+        cout << "val at ptr is " << *(temp) << endl;
+        temp++;
+    }
+    temp--;
+    cout << "val of ptr should be 30 and is " << *temp << endl;
+
+    return 0;
+}
+```
 
 ### 2. Function Pointers
 
