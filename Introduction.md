@@ -193,3 +193,68 @@ int main() {
     return 0;
 }
 ```
+
+#### More struct examples
+
+In this example, we'll define a `Book` structure using `typedef struct`, where each book contains a `title`, `author`, and `year` of publication. We'll also demonstrate constructors for this structure.
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+typedef struct Book {
+    char title[100];
+    char author[100];
+    int year;
+
+    // Default Constructor
+    Book() {
+        strcpy(title, "Unknown Title");
+        strcpy(author, "Unknown Author");
+        year = 0;
+        std::cout << "Default Constructor Called!\n";
+    }
+
+    // Parameterized Constructor
+    Book(const char* t, const char* a, int y) {
+        strcpy(title, t);
+        strcpy(author, a);
+        year = y;
+        std::cout << "Parameterized Constructor Called!\n";
+    }
+
+    // Copy Constructor
+    Book(const Book& other) {
+        strcpy(title, other.title);
+        strcpy(author, other.author);
+        year = other.year;
+        std::cout << "Copy Constructor Called!\n";
+    }
+
+    // Function to display book details
+    void display() {
+        std::cout << "Title: " << title << ", Author: " << author << ", Year: " << year << std::endl;
+    }
+} Book;
+
+int main() {
+    // Create a book using the default constructor
+    Book book1;
+
+    // Create a book using the parameterized constructor
+    Book book2("1984", "George Orwell", 1949);
+
+    // Create a book using the copy constructor
+    Book book3 = book2;
+
+    // Display book details
+    std::cout << "Book 1: ";
+    book1.display();
+    std::cout << "Book 2: ";
+    book2.display();
+    std::cout << "Book 3: ";
+    book3.display();
+
+    return 0;
+}
+```
