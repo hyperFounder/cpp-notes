@@ -2,8 +2,6 @@
 
 A **tree** is a nonlinear hierarchical data structure consisting of nodes connected by edges. It is widely used to represent hierarchical relationships, such as organizational charts, file systems, and decision-making processes.
 
-- A tree is a directed acyclic graph
-
 ![Screenshot 2025-03-24 at 22 12 35](https://github.com/user-attachments/assets/d96d2f0f-3e32-465c-90f5-32facaddc94a)
 
 ### Applications of Trees:
