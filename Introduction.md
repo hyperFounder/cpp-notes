@@ -48,7 +48,7 @@ int main(){
         temp++;
     }
     temp--;
-    cout << "val of ptr should be 30 and is " << *temp << endl;
+    cout << "val of ptr should be 4 and is " << *temp << endl;
 
     return 0;
 }
