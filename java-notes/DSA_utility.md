@@ -192,3 +192,38 @@ for (Integer element : set) {
 }
 ```
 
+#### Maps
+
+A `Map` in Java is a collection that stores key-value pairs. It allows efficient retrieval, insertion, and deletion of elements based on keys.
+
+## 2. Types of Maps
+Java provides several implementations of the `Map` interface:
+
+| Map Type          | Key Ordering | Performance Notes |
+|------------------|-------------|------------------|
+| `HashMap`       | No order     | O(1) for insert, delete, and lookup |
+| `LinkedHashMap` | Insertion order | Maintains order of insertion |
+| `TreeMap`       | Sorted order (natural/comparator) | O(log n) operations using Red-Black Tree |
+
+---
+![Screenshot 2025-03-26 at 22 49 42](https://github.com/user-attachments/assets/735e1c70-e305-4621-9e3c-04283d5c88fd)
+
+### 3.1 Using `HashMap`
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("Alice", 25);
+        map.put("Bob", 30);
+        map.put("Charlie", 22);
+        
+        System.out.println(map.get("Alice")); // Output: 25
+    }
+}
+```
+
+
+
