@@ -1,6 +1,6 @@
-### C++ Notes
+### C++/Java Notes
 
-- These are my own personal notes on C++.
+- These are my own personal notes on C++ and java.
 
 ### Prerequisites
 
